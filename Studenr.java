@@ -3,6 +3,7 @@ public class Studenr
     private String  name;
     private int     alter;
     private boolean matura;
+    private String religion;
     
     public void setName(String newName)
     {
@@ -19,6 +20,11 @@ public class Studenr
         matura = newMatura;
     }
     
+    public void setReligion(String newReligion)
+    {
+        religion = newReligion;
+    }
+    
     public String getName()
     {
         return name;
@@ -32,5 +38,10 @@ public class Studenr
     public boolean getMatura()
     {
         return matura;
+    }
+    
+    public String getReligion()
+    {
+        return religion;
     }
 }
