@@ -5,6 +5,14 @@ public class Studenr
     private boolean matura;
     private String religion;
     
+    public Studenr(String newName, int newAlter, boolean newMatura, String newReligion)
+    {
+     setName(newName);
+     setAlter(newAlter);
+     setMatura(newMatura);
+     setReligion(newReligion);     
+    }
+   
     public void setName(String newName)
     {
         name = newName;
