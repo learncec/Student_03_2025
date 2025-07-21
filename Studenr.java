@@ -52,4 +52,9 @@ public class Studenr
     {
         return religion;
     }
+    
+    public void printStundr()
+    {
+        System.out.println("Name: " + name + ", Alter: " + alter + ", Matura: " + matura + ", ja, sie hat, Religion: " + religion);
+    }
 }
