@@ -13,6 +13,30 @@ public class Studenr
      setReligion(newReligion);     
     }
    
+    public Studenr(String newName, int newAlter, String newReligion)
+    {
+        setName(newName);
+        setAlter(newAlter);
+        setReligion(newReligion);
+        setMatura(false); //Wurde nicht als Paramter übergeben, also muss man hier den Default Wert für matura annehmen.
+    }
+    public Studenr(String newName)
+    {
+        setName(newName);
+        setAlter(14);//Default Werte:
+        setMatura(false);
+        setReligion("ob");
+    }
+    public Studenr()
+    {
+        setName("UNKN");
+        setAlter(14);//Default Werte:
+        setMatura(false);
+        setReligion("ob");
+    }
+    //Vier Varianten um ein Objekt anzulegen.
+    //Die Konstruktoren müssen sich im Methodenkopf durch die Signatur auch unterscheiden.
+    
     public void setName(String newName)
     {
         name = newName;
