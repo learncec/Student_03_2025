@@ -1,33 +1,33 @@
-public class Studenr
+public class Student
 {
     private String  name;
     private int     alter;
     private boolean matura;
     private String religion;
     
-    public Studenr(String newName, int newAlter, boolean newMatura, String newReligion)
+    public Student(String name, int alter, boolean matura, String religion)
     {
-     setName(newName);
-     setAlter(newAlter);
-     setMatura(newMatura);
-     setReligion(newReligion);     
+     setName(name);
+     setAlter(alter);
+     setMatura(matura);
+     setReligion(religion);     
     }
    
-    public Studenr(String newName, int newAlter, String newReligion)
+    public Student(String name, int alter, String religion)
     {
-        setName(newName);
-        setAlter(newAlter);
-        setReligion(newReligion);
+        setName(name);
+        setAlter(alter);
+        setReligion(religion);
         setMatura(false); //Wurde nicht als Paramter übergeben, also muss man hier den Default Wert für matura annehmen.
     }
-    public Studenr(String newName)
+    public Student(String name)
     {
-        setName(newName);
+        setName(name);
         setAlter(14);//Default Werte:
         setMatura(false);
         setReligion("ob");
     }
-    public Studenr()
+    public Student()
     {
         setName("UNKN");
         setAlter(14);//Default Werte:
@@ -37,42 +37,36 @@ public class Studenr
     //Vier Varianten um ein Objekt anzulegen.
     //Die Konstruktoren müssen sich im Methodenkopf durch die Signatur auch unterscheiden.
     
-    public void setName(String newName)
+    public void setName(String name)
     {
-        name = newName;
+        this.name = name;
     }
-    
-    public void setAlter(int newAlter)
+        public void setAlter(int alter)
     {
-        alter = newAlter;
+        this.alter = alter;
     }
-    
-    public void setMatura(boolean newMatura)
+        public void setMatura(boolean matura)
     {
-        matura = newMatura;
+        this.matura = matura;
     }
-    
-    public void setReligion(String newReligion)
+        public void setReligion(String religion)
     {
-        religion = newReligion;
+        this.religion = religion;
     }
     
     public String getName()
     {
         return name;
     }
-    
-    public int getAlter()
+        public int getAlter()
     {
         return alter;
     }
-    
-    public boolean getMatura()
+        public boolean getMatura()
     {
         return matura;
     }
-    
-    public String getReligion()
+        public String getReligion()
     {
         return religion;
     }
