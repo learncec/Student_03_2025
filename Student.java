@@ -5,6 +5,9 @@ public class Student
     private boolean matura;
     private String religion;
     
+    //Constructoren
+    //Vier Varianten um ein Objekt anzulegen.
+    //Die Konstruktoren müssen sich im Methodenkopf durch die Signatur unterscheiden.
     public Student(String name, int alter, boolean matura, String religion)
     {
      setName(name);
@@ -12,8 +15,7 @@ public class Student
      setMatura(matura);
      setReligion(religion);     
     }
-   
-    public Student(String name, int alter, String religion)
+       public Student(String name, int alter, String religion)
     {
         setName(name);
         setAlter(alter);
@@ -34,8 +36,6 @@ public class Student
         setMatura(false);
         setReligion("ob");
     }
-    //Vier Varianten um ein Objekt anzulegen.
-    //Die Konstruktoren müssen sich im Methodenkopf durch die Signatur auch unterscheiden.
     
     public void setName(String name)
     {
@@ -54,6 +54,7 @@ public class Student
         this.religion = religion;
     }
     
+    
     public String getName()
     {
         return name;
@@ -71,8 +72,15 @@ public class Student
         return religion;
     }
     
-    public void printStundr()
+    //ifAbfrage: Abhängig von der Eigenschaft matura(true/false): zwei Texte -->Entweder Matura oder keine Matura
+    public void printStudent()
     {
-        System.out.println("Name: " + name + ", Alter: " + alter + ", Matura: " + matura + ", ja, sie hat, Religion: " + religion);
+        if(matura == true)
+        {
+        System.out.println("Name: " + name + ", Alter: " + alter + ", ja, hat Matura, Religion: " + religion + ".");
+        }
+        else{
+        System.out.println("Name: " + name + ", Alter: " + alter + ", nein hat keine Matura, Religion: " + religion + ".");
+        }
     }
 }
